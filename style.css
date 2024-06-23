@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: #fda132;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.prodect{
+    width: 90%;
+    max-width: 750px;
+    display: flex;
+}
+.gallery{
+    flex-basis: 47%;
+    background: #232479;
+    transform: scale(1.08);
+    box-shadow: -10px 5px 10px 10px rgba(0,0,0,0.1);
+    position: relative;
+}
+.gallery img{
+    width: 100%;
+    display: block;
+    padding: 100px;
+}
+.details{
+    flex-basis: 53%;
+    background: #234901;
+    padding: 40px;
+    padding-left: 60px;
+    box-shadow: -10px 5px 10px 10px rgba(0,0,0,0.1);
+    font-size: 13px;
+    color: #eae6e6;
+}
+.details h1{
+    color: #e2d6d6;
+    font-size: 35px;
+}
+.details h2{
+    color: #d9c4c4;
+    font-size: 30px;
+    font-weight: 600;
+}
+.details h3{
+    color:#dee6e2;
+    margin-bottom: 20px;
+}
+.details form{
+    font-size: 15px;
+    font-weight: 400;
+}
+.size-select{
+   display: flex;
+   align-items: center;
+   margin-top: 50px; 
+}
+.size-select p{
+    width: 70px;
+}
+.size-select input:checked+span{
+    color: #e0e0e9;
+    font-weight: 600;
+}
+.size-select input{
+    display: none;
+}
+.size-select span{
+    padding: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.color-select{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.color-select p{
+    width: 75px;
+}
+.color-select span{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.color1{
+    background: red;
+}
+.color2{
+    background: green;
+}
+.color3{
+    background: blue;
+}
+.color4{
+    background: pink;
+}
+.color-select input{
+    display: none;
+}
+.color-select input:checked +span{
+    transform: scale(0.7);
+    box-shadow: 0 0 0 4px #fff,0 0 0 6px #e50a0a;
+}
+.quentity-select{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.quentity-select p{
+    width: 75px;
+}
+
+.quentity-select input{
+    background: #eee;
+    border: 0;
+    outline: 0;
+    padding: 2px 2px 2px 15px;
+    width: 50px;
+    cursor: pointer;
+}
+form button{
+    background: #19f088;
+    color: #fff;
+    font-size: 17px;
+    width: 100%;
+    padding: 10px;
+    border-radius:30px;
+    border: 0;
+    outline: 0;
+    margin-top: 50px;
+    box-shadow: 0 10px 10px rgba(85,63,240,0.25);
+    cursor: pointer;
+}
+.controls{
+  position: absolute;
+  bottom: 40px;
+  right: 20px;
+}
+.btn{
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    margin: 10px;
+    cursor: pointer;
+}
+.btn.active{
+    background: #e2d6d6;
+}
